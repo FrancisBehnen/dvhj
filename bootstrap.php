@@ -66,7 +66,7 @@ I18n::lang('en-us');
 /**
  * Set cookie salt
  */
-Cookie::$salt = 'dvhj2017_huray!';
+Cookie::$salt = 'dvhj2018_huray!';
 
 /**
  * Set Kohana::$environment if a 'KOHANA_ENV' environment variable has been supplied.
