@@ -1,5 +1,5 @@
 <?php
-return;
+//return;
 ?>
 <p><strong>For English, scroll down.</strong></p>
 <p>Beste student,</p>
