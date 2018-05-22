@@ -11,7 +11,7 @@ class Controller_Default extends Controller_Website {
 	public function action_mail(){
 		// Only if logged in
 		//if(!Auth::instance()->logged_in())
-		HTTP::redirect("#login");
+//		HTTP::redirect("#login");
 
 		$config = Kohana::$config->load('email');
 		
@@ -27,7 +27,7 @@ class Controller_Default extends Controller_Website {
 		require MODPATH.'kohana-email/vendor/swiftmailer/lib/swift_required.php';
 		
 		// Create the Transport
-		$transport = Swift_SmtpTransport::newInstance("ch.tudelft.nl", 25);
+		$transport = Swift_SmtpTransport::newInstance("ch.tudelft.nl", 587);
 		// Create the Mailer using your created Transport
 		$mailer = Swift_Mailer::newInstance($transport);
 		
@@ -48,12 +48,12 @@ class Controller_Default extends Controller_Website {
 		
 			if (!$student->mail) continue;
 			
-		 	//$message->setTo(array($student->mail => $student->name));
-		//	$view = View::factory("template/mail")->set('student', $student);
-			//$message->setBody($view, 'text/html');
+		 	$message->setTo(array($student->mail => $student->name));
+			$view = View::factory("template/mail")->set('student', $student);
+			$message->setBody($view, 'text/html');
 		  
-			//echo $student->mail . "\n";flush();
-		  //$numSent += $mailer->send($message, $failedRecipients);
+			echo $student->mail . "\n";flush();
+		  $numSent += $mailer->send($message, $failedRecipients);
 		}
 		
 		$error = count($failedRecipients) ? " Failed sending mails for ". implode(", ", $failedRecipients) : "";
