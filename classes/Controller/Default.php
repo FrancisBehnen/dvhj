@@ -24,7 +24,7 @@ class Controller_Default extends Controller_Website {
 		}
 
 		// Load classes
-		require MODPATH.'kohana-email/vendor/swift/swift_required.php';
+		require MODPATH.'kohana-email/vendor/swiftmailer/lib/swift_required.php';
 		
 		// Create the Transport
 		$transport = Swift_SmtpTransport::newInstance("ch.tudelft.nl", 25);
