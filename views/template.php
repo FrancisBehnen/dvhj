@@ -19,7 +19,7 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="https://ch.tudelft.nl/sites/default/themes/CHallenge/favicon.ico">
+    <link rel="shortcut icon" href="https://ch.tudelft.nl/wp-content/themes/rechallenge/assets/images/favicon.png">
 		
 		<script>var root_url = "<?php echo URL::base(); ?>";</script>
   </head>
