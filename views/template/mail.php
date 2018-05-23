@@ -49,7 +49,7 @@ $url = URL::site(
 
 <p><?php echo $sender; ?></p>
 
-<p>Chief Commissioner of Computer Science Education<br />
+<p>Computer Science Education Affairs<br />
 of W.I.S.V. 'Christiaan Huygens'<br />
 [t] (015) 2782532<br />
 [w] <a href="http://ch.tudelft.nl">http://ch.tudelft.nl</a></p>

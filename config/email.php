@@ -26,5 +26,5 @@ return array(
 	 * @param   array   smtp: hostname, (username), (password), (port), (encryption)
 	 */
 	'options' => array( 'smtp-a.tudelft.nl', 'fbehnen'),
-	'sender'  => array( 'coi@ch.tudelft.nl' => 'Francis Behnen, Commissaris Onderwijs Informatica'),
+	'sender'  => array( 'coi@ch.tudelft.nl' => 'Francis Behnen'),
 );
